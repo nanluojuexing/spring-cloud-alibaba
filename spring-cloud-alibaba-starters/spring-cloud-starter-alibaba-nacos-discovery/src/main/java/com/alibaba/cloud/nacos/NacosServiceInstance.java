@@ -23,6 +23,9 @@ import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.ServiceInstance;
 
 /**
+ *
+ * 服务实例信息
+ *
  * @author xiaojing
  */
 public class NacosServiceInstance implements ServiceInstance {

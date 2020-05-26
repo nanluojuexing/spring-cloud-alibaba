@@ -45,6 +45,15 @@ public class NacosServiceRegistry implements ServiceRegistry<Registration> {
 		this.nacosDiscoveryProperties = nacosDiscoveryProperties;
 	}
 
+	/**
+	 *
+	 * 注册流程
+	 * NacosServiceRegistry.register()–>namingService.registerInstance()
+	 * –>serverProxy(NamingProxy).registerService()–>NamingProxy.reqAPI()
+	 * –>NamingProxy.callServer()–>HttpClient.request();
+	 *
+	 * @param registration
+	 */
 	@Override
 	public void register(Registration registration) {
 

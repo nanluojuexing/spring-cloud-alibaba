@@ -34,6 +34,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.TaskScheduler;
 
 /**
+ * 服务发现的启动类 初始化配置
  * @author xiaojing
  * @author echooymxq
  */

@@ -60,6 +60,8 @@ import static com.alibaba.nacos.api.PropertyKeyConst.SERVER_ADDR;
 import static com.alibaba.nacos.api.PropertyKeyConst.USERNAME;
 
 /**
+ * 获取到配置项
+ *
  * @author dungu.zpf
  * @author xiaojing
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>

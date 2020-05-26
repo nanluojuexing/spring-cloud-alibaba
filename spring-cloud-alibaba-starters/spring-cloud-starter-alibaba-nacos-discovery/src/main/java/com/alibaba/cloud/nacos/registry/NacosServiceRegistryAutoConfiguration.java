@@ -31,7 +31,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
+/** nacos 自动装配注册配置项
+ * 
  * @author xiaojing
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
