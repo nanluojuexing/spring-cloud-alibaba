@@ -31,6 +31,18 @@ import org.springframework.util.StringUtils;
 import static org.springframework.util.ReflectionUtils.rethrowRuntimeException;
 
 /**
+ *
+ * NacosServiceRegistry则负责实现Spring Cloud标准接口ServiceRegistry的五个方法
+ *
+ *    void register(R registration);
+ *    void deregister(R registration);
+ *    void close();
+ *    void setStatus(R registration, String status);
+ *    <T> T getStatus(R registration);
+ *
+ * 并且依赖了NamingService这个接口实例对象(NacosNamingService实现了该接口)
+ * NacosNamingService负责发起远程HTTP（HTTPS）调用，并将实例信息发送到注册中心服务，完成服务注册
+ *
  * @author xiaojing
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @author <a href="mailto:78552423@qq.com">eshun</a>

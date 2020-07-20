@@ -30,6 +30,9 @@ import com.alibaba.nacos.api.naming.pojo.ListView;
 import org.springframework.cloud.client.ServiceInstance;
 
 /**
+ *
+ * NacosDiscoveryProperties的NamingService获取信息，将Instance封装成ServiceInstance
+ *
  * @author <a href="mailto:echooy.mxq@gmail.com">echooymxq</a>
  **/
 public class NacosServiceDiscovery {

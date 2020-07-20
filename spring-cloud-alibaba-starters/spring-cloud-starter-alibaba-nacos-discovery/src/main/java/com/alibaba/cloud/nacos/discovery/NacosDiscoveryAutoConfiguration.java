@@ -25,7 +25,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 初始化nacos的配置信息
+ *
+ * 初始化nacos的配置信息  主要是
  *
  * @author <a href="mailto:echooy.mxq@gmail.com">echooymxq</a>
  **/

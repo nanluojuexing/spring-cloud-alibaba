@@ -30,6 +30,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ *
+ * 监控相关的信息
+ *
  * The AutoConfiguration class for Nacos Discovery's Endpoints.
  *
  * @author xiaojing

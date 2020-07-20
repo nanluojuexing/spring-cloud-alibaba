@@ -60,7 +60,7 @@ import static com.alibaba.nacos.api.PropertyKeyConst.SERVER_ADDR;
 import static com.alibaba.nacos.api.PropertyKeyConst.USERNAME;
 
 /**
- * 获取到配置项
+ * 服务发现的属性和命名服务
  *
  * @author dungu.zpf
  * @author xiaojing

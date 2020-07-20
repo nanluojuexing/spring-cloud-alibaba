@@ -34,6 +34,11 @@ import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
 
 /**
+ *
+ * NacosRegistration 实现 Registration 接口和 ServiceInstance 接口
+ * 在 management 管理类的配置信息
+ * 在 nacos 中它代表了一个服务实例，它描述了关于实例的id、名称、ip、端口和元数据等等这些信息
+ *
  * @author xiaojing
  */
 public class NacosRegistration implements Registration, ServiceInstance {

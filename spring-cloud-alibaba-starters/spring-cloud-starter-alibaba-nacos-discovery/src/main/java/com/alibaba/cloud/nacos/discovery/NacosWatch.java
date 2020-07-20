@@ -33,6 +33,9 @@ import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 /**
+ * 创建了一个ThreadPoolTaskScheduler调度器，实现了SmartLifecycle，在start方法中执行了调度任务
+ *
+ *
  * @author xiaojing
  */
 public class NacosWatch implements ApplicationEventPublisherAware, SmartLifecycle {
@@ -124,6 +127,9 @@ public class NacosWatch implements ApplicationEventPublisherAware, SmartLifecycl
 		return 0;
 	}
 
+	/**
+	 * 是30秒一次的心跳来通知心跳事件
+	 */
 	public void nacosServicesWatch() {
 
 		// nacos doesn't support watch now , publish an event every 30 seconds.

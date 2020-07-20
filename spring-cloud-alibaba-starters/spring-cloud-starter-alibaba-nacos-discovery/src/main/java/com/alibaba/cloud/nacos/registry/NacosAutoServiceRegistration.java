@@ -27,6 +27,13 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
+ *
+ * NacosAutoServiceRegistration继承了抽象类AbstractAutoServiceRegistration，
+ * AbstractAutoServiceRegistration实现了标准接口AutoServiceRegistration（该接口是一个空接口），
+ * 并且实现了ApplicationListener应用监听接口去监听WebServerInitializedEvent事件，
+ * WebServerInitializedEvent事件代表了应用初始化完成。同时NacosAutoServiceRegistration对象还依赖了NacosRegistration和ServiceRegistry这两个对象
+ *
+ *
  * @author xiaojing
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
@@ -64,6 +71,9 @@ public class NacosAutoServiceRegistration
 		return null;
 	}
 
+	/**
+	 *
+	 */
 	@Override
 	protected void register() {
 		if (!this.registration.getNacosDiscoveryProperties().isRegisterEnabled()) {
@@ -73,6 +83,7 @@ public class NacosAutoServiceRegistration
 		if (this.registration.getPort() < 0) {
 			this.registration.setPort(getPort().get());
 		}
+		// 最终会调用 NacosServiceRegistry的register()
 		super.register();
 	}
 
